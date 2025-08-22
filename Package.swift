@@ -1,16 +1,15 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.10
 
 import PackageDescription
 
 let package = Package(
     name: "RuleKit",
     platforms: [
-        .macOS(.v10_14), .iOS(.v12), .tvOS(.v12)
+        .macOS(.v12), .iOS(.v15), .tvOS(.v15), .visionOS(.v1)
     ],
     products: [
         .library(name: "RuleKit", targets: ["RuleKit"]),
     ],
-    dependencies: [],
     targets: [
         .target(name: "RuleKit",
                 dependencies: [],
